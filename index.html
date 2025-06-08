@@ -36,6 +36,7 @@
         const value = document.getElementById("datetime").value;
          console.log("Дата передається:", value);
         if (value) {
+          alert("Дата передається: " + value);
           Telegram.WebApp.sendData(value);
           Telegram.WebApp.close();
         } else {
