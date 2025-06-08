@@ -34,6 +34,7 @@
 
       document.getElementById("confirm").onclick = function() {
         const value = document.getElementById("datetime").value;
+         console.log("Дата передається:", value);
         if (value) {
           Telegram.WebApp.sendData(value);
           Telegram.WebApp.close();
